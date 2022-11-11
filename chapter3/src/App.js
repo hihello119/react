@@ -1,8 +1,12 @@
 import React from "react";
-import EventPractice from "./EventPractice";
+import MyComponent from "./MyComponent";
 
 const App = () => {
-  return <EventPractice />;
+  return (
+    <MyComponent name="React" favoriteNumber={1}>
+      리액트
+    </MyComponent>
+  );
 };
 
 export default App;
