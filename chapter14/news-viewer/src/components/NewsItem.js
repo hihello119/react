@@ -1,13 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const NewsItemBlock = styled.div`
   display: flex;
 
-
-
-.thumbnail {
+  .thumbnail {
     margin-right: 1rem;
     img {
       display: block;
@@ -57,7 +54,4 @@ const NewsItem = ({ article }) => {
   );
 };
 
-
-
 export default NewsItem;
-
