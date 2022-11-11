@@ -20,7 +20,7 @@ const App = () => {
 
   // 고윳값으로 사용될 id
   // ref를 사용하여 변수 담기
-  const nextId = useRef(2501);
+  const nextId = useRef(4);
 
   const onInsert = useCallback(
     (text) => {
@@ -37,20 +37,20 @@ const App = () => {
 
   const onRemove = useCallback(
     (id) => {
-      setTodos(todos.filter((todo) => todo.id !== id));
+      setTodos(todos => todos.filter((todo) => todo.id !== id));
     },
-    [todos],
+    [],
   );
 
   const onToggle = useCallback(
     (id) => {
-      setTodos(
+      setTodos(todos =>
         todos.map((todo) =>
           todo.id === id ? { ...todo, checked: !todo.checked } : todo,
         ),
       );
     },
-    [todos],
+    [],
   );
 
   return (
