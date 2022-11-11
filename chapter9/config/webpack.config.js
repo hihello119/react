@@ -516,6 +516,7 @@ module.exports = function (webpackEnv) {
                 options: {
                   includePaths: [paths.appSrc + "/styles"],
                   sourceMap: isEnvProduction && shouldUseSourceMap,
+                  data: `@import 'utils';`,
                 },
               }),
               sideEffects: true,
